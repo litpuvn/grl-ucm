@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="hoanglong" created="February 14, 2017 10:05:49 AM CST" modified="February 14, 2017 10:47:18 AM CST" specVersion="12" urnVersion="1.27" nextGlobalID="94">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="hoanglong" created="February 14, 2017 10:05:49 AM CST" modified="February 19, 2017 11:29:20 PM CST" specVersion="19" urnVersion="1.27" nextGlobalID="97">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup6" id="6">
       <scenarios name="ScenarioDef7" id="7"/>
     </scenarioGroups>
   </ucmspec>
   <grlspec>
-    <intElements name="Protect Privacy" id="24" linksDest="77 78" decompositionType="Or" refs="25">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+    <intElements name="Protect Privacy" id="24" linksDest="77 78" refs="25">
+      <metadata name="_numEval" value="75"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Prevent Unauthorized Disclosure" id="36" linksDest="87 88 92" linksSrc="78" type="Goal" refs="37">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="75"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Goal38" id="38" type="Goal">
       <metadata name="_numEval" value="0"/>
       <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements name="Check Ethiccal Issues" id="42" linksSrc="87" type="Task" refs="43">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="75"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
-    <intElements name="Check compliance to Legislation" id="44" linksSrc="88" type="Task" refs="45">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+    <intElements name="Check compliance to Legislation" id="44" linksSrc="88" type="Task" importance="High" importanceQuantitative="75" refs="45">
+      <metadata name="_numEval" value="75"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Trust User" id="46" linksSrc="70 92" type="Task" refs="47">
       <metadata name="_addAggregate" value="disable"/>
@@ -32,21 +32,21 @@
       <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements name="Get Signed Agreement" id="48" linksDest="64 85" linksSrc="71" type="Task" refs="49">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="75"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Sign" id="50" linksSrc="64" type="Task" refs="51">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Reach Agreement" id="54" linksSrc="85" type="Goal" refs="55">
       <metadata name="_numEval" value="0"/>
       <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements name="Ensure Accountability of Data User" id="56" linksDest="65 70 71" linksSrc="77" type="Goal" decompositionType="Or" refs="57">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="75"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Verify Access Logs" id="60" linksSrc="65" type="Goal" refs="61">
       <metadata name="_addAggregate" value="disable"/>
@@ -64,8 +64,8 @@
       <metadata name="_qualEval" value="None"/>
     </actors>
     <actors name="REB" id="28" contRefs="29">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
+      <metadata name="_numEval" value="75"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </actors>
     <actors name="DB Admin" id="30" contRefs="31">
       <metadata name="_numEval" value="0"/>
@@ -85,8 +85,43 @@
     <links xsi:type="grl:Decomposition" name="Decomposition87" id="87" refs="//@urndef/@specDiagrams.0/@connections.7" dest="36" src="42"/>
     <links xsi:type="grl:Decomposition" name="Decomposition88" id="88" refs="//@urndef/@specDiagrams.0/@connections.8" dest="36" src="44"/>
     <links xsi:type="grl:Contribution" name="Contribution92" id="92" refs="//@urndef/@specDiagrams.0/@connections.10" dest="36" src="46" contribution="Hurt" quantitativeContribution="-25" correlation="true"/>
-    <groups name="StrategiesGroup4" id="4" strategies="5"/>
-    <strategies name="EvaluationStrategy5" id="5" author="hoanglong" group="4"/>
+    <groups name="MyStrategies" id="4" strategies="5 96 97"/>
+    <strategies name="Quanlitative1" id="5" author="hoanglong" group="4">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="42">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="44">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="46">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
+    <strategies name="Quantitative1" id="96" author="hoanglong" group="4">
+      <evaluations evaluation="75" qualitativeEvaluation="WeaklySatisfied" intElement="42">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="75" qualitativeEvaluation="WeaklySatisfied" intElement="44">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="46">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
+    <strategies name="Quatitative2" id="97" author="hoanglong" group="4">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="50">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="75" qualitativeEvaluation="WeaklySatisfied" intElement="48">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="75" qualitativeEvaluation="WeaklySatisfied" intElement="44">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="75" qualitativeEvaluation="WeaklySatisfied" intElement="42">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
     <impactModel/>
     <indicatorGroup name="Time" id="8" isRedesignCategory="true"/>
     <indicatorGroup name="Cost" id="9" isRedesignCategory="true"/>
