@@ -1,77 +1,41 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="hoanglong" created="February 14, 2017 10:05:49 AM CST" modified="February 19, 2017 11:29:20 PM CST" specVersion="19" urnVersion="1.27" nextGlobalID="97">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="hoanglong" created="February 14, 2017 10:05:49 AM CST" modified="February 20, 2017 12:17:11 AM CST" specVersion="26" urnVersion="1.27" nextGlobalID="226">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup6" id="6">
       <scenarios name="ScenarioDef7" id="7"/>
     </scenarioGroups>
   </ucmspec>
   <grlspec>
-    <intElements name="Protect Privacy" id="24" linksDest="77 78" refs="25">
-      <metadata name="_numEval" value="75"/>
-      <metadata name="_qualEval" value="WeaklySatisfied"/>
-    </intElements>
-    <intElements name="Prevent Unauthorized Disclosure" id="36" linksDest="87 88 92" linksSrc="78" type="Goal" refs="37">
-      <metadata name="_numEval" value="75"/>
-      <metadata name="_qualEval" value="WeaklySatisfied"/>
-    </intElements>
-    <intElements name="Goal38" id="38" type="Goal">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
-    </intElements>
-    <intElements name="Check Ethiccal Issues" id="42" linksSrc="87" type="Task" refs="43">
-      <metadata name="_numEval" value="75"/>
-      <metadata name="_qualEval" value="WeaklySatisfied"/>
-    </intElements>
-    <intElements name="Check compliance to Legislation" id="44" linksSrc="88" type="Task" importance="High" importanceQuantitative="75" refs="45">
-      <metadata name="_numEval" value="75"/>
-      <metadata name="_qualEval" value="WeaklySatisfied"/>
-    </intElements>
+    <intElements name="Protect Privacy" id="24" linksDest="77 78" refs="25"/>
+    <intElements name="Prevent Unauthorized Disclosure" id="36" linksDest="87 88 92" linksSrc="78" type="Goal" refs="37"/>
+    <intElements name="Goal38" id="38" type="Goal"/>
+    <intElements name="Check Ethiccal Issues" id="42" linksSrc="87" type="Task" refs="43"/>
+    <intElements name="Check compliance to Legislation" id="44" linksSrc="88" type="Task" importance="High" importanceQuantitative="75" refs="45"/>
     <intElements name="Trust User" id="46" linksSrc="70 92" type="Task" refs="47">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
-    <intElements name="Get Signed Agreement" id="48" linksDest="64 85" linksSrc="71" type="Task" refs="49">
-      <metadata name="_numEval" value="75"/>
-      <metadata name="_qualEval" value="WeaklySatisfied"/>
-    </intElements>
+    <intElements name="Get Signed Agreement" id="48" linksDest="64 85" linksSrc="71" type="Task" refs="49"/>
     <intElements name="Sign" id="50" linksSrc="64" type="Task" refs="51">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
-    <intElements name="Reach Agreement" id="54" linksSrc="85" type="Goal" refs="55">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
-    </intElements>
-    <intElements name="Ensure Accountability of Data User" id="56" linksDest="65 70 71" linksSrc="77" type="Goal" decompositionType="Or" refs="57">
-      <metadata name="_numEval" value="75"/>
-      <metadata name="_qualEval" value="WeaklySatisfied"/>
-    </intElements>
+    <intElements name="Reach Agreement" id="54" linksSrc="85" type="Goal" refs="55"/>
+    <intElements name="Ensure Accountability of Data User" id="56" linksDest="65 70 71" linksSrc="77" type="Goal" decompositionType="Or" refs="57"/>
     <intElements name="Verify Access Logs" id="60" linksSrc="65" type="Goal" refs="61">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
     </intElements>
-    <intElements name="Do Useful Research" id="73" refs="74">
-      <metadata name="_numEval" value="0"/>
-      <metadata name="_qualEval" value="None"/>
-    </intElements>
+    <intElements name="Do Useful Research" id="73" refs="74"/>
     <actors name="Actor12" id="12"/>
     <actors name="Actor14" id="14"/>
     <actors name="HIC" id="20" contRefs="21">
       <metadata name="_numEval" value="0"/>
       <metadata name="_qualEval" value="None"/>
     </actors>
-    <actors name="REB" id="28" contRefs="29">
-      <metadata name="_numEval" value="75"/>
-      <metadata name="_qualEval" value="WeaklySatisfied"/>
-    </actors>
+    <actors name="REB" id="28" contRefs="29"/>
     <actors name="DB Admin" id="30" contRefs="31">
       <metadata name="_numEval" value="0"/>
       <metadata name="_qualEval" value="None"/>
     </actors>
-    <actors name="Researcher" id="32" fillColor="255,160,160" filled="true" contRefs="33">
+    <actors name="Researcher" fromLinks="//@urnLinks.0" id="32" fillColor="255,160,160" filled="true" contRefs="33">
       <metadata name="_numEval" value="0"/>
       <metadata name="_qualEval" value="None"/>
     </actors>
@@ -130,6 +94,14 @@
     <featureModel/>
   </grlspec>
   <urndef>
+    <responsibilities name="Sign Agreement" id="151" respRefs="152"/>
+    <responsibilities name="Send Signed Agreement" id="153" respRefs="154"/>
+    <responsibilities name="Get signed agreement" id="157" respRefs="158"/>
+    <responsibilities name="Grant Access" id="161" respRefs="172"/>
+    <responsibilities name="Responsibility171" id="171"/>
+    <responsibilities name="Find signed agreement" id="211" respRefs="212"/>
+    <responsibilities name="Send signed documents" id="215" respRefs="216"/>
+    <responsibilities name="Validate Lregistration Compliance" id="223" respRefs="224"/>
     <specDiagrams xsi:type="grl:GRLGraph" name="GRLGraph2" id="2">
       <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef25" id="25" x="122" y="59" contRef="21" pred="//@urndef/@specDiagrams.0/@connections.4 //@urndef/@specDiagrams.0/@connections.5" def="24">
         <metadata name="_height" value="45"/>
@@ -182,10 +154,10 @@
       <contRefs xsi:type="grl:ActorRef" name="ActorRef21" id="21" x="106" y="29" width="139" height="108" contDef="20" nodes="25">
         <label/>
       </contRefs>
-      <contRefs xsi:type="grl:ActorRef" name="ActorRef29" id="29" x="49" y="230" width="306" height="271" contDef="28" nodes="37 43 45">
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef29" fromLinks="//@urnLinks.2" id="29" x="49" y="230" width="306" height="271" contDef="28" nodes="37 43 45">
         <label/>
       </contRefs>
-      <contRefs xsi:type="grl:ActorRef" name="ActorRef31" id="31" x="401" y="34" width="382" height="326" contDef="30" nodes="57 49 51 47 61">
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef31" fromLinks="//@urnLinks.1 //@urnLinks.3" id="31" x="401" y="34" width="382" height="326" contDef="30" nodes="57 49 51 47 61">
         <label/>
       </contRefs>
       <contRefs xsi:type="grl:ActorRef" name="ActorRef33" id="33" x="539" y="428" width="236" height="210" contDef="32" nodes="55 74">
@@ -212,7 +184,91 @@
         <label deltaX="-15" deltaY="-32"/>
       </connections>
     </specDiagrams>
-    <specDiagrams xsi:type="ucm.map:UCMmap" name="UCMmap3" id="3"/>
+    <specDiagrams xsi:type="ucm.map:UCMmap" name="UCMmap3" id="3">
+      <nodes xsi:type="ucm.map:StartPoint" name="Request Access Patient Data" id="130" x="89" y="100" contRef="103" succ="//@urndef/@specDiagrams.1/@connections.0">
+        <label deltaX="-39" deltaY="5"/>
+        <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EndPoint" name="Get patient Data" id="132" x="113" y="206" contRef="103" pred="//@urndef/@specDiagrams.1/@connections.8">
+        <label/>
+        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef152" id="152" x="224" y="117" contRef="103" succ="//@urndef/@specDiagrams.1/@connections.1" pred="//@urndef/@specDiagrams.1/@connections.0" respDef="151">
+        <label/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef154" id="154" x="322" y="160" contRef="103" succ="//@urndef/@specDiagrams.1/@connections.2" pred="//@urndef/@specDiagrams.1/@connections.5" respDef="153">
+        <label deltaX="-2" deltaY="14"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef158" id="158" x="599" y="100" contRef="105" succ="//@urndef/@specDiagrams.1/@connections.3" pred="//@urndef/@specDiagrams.1/@connections.6" respDef="157">
+        <label/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef172" id="172" x="549" y="179" contRef="105" succ="//@urndef/@specDiagrams.1/@connections.4" pred="//@urndef/@specDiagrams.1/@connections.7" respDef="161">
+        <label/>
+      </nodes>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow175" id="175" x="274" y="146" contRef="103" succ="//@urndef/@specDiagrams.1/@connections.5" pred="//@urndef/@specDiagrams.1/@connections.1"/>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow178" id="178" x="463" y="81" succ="//@urndef/@specDiagrams.1/@connections.6" pred="//@urndef/@specDiagrams.1/@connections.2"/>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow180" id="180" x="599" y="145" contRef="105" succ="//@urndef/@specDiagrams.1/@connections.7" pred="//@urndef/@specDiagrams.1/@connections.3"/>
+      <nodes xsi:type="ucm.map:DirectionArrow" name="DirectionArrow181" id="181" x="454" y="184" succ="//@urndef/@specDiagrams.1/@connections.8" pred="//@urndef/@specDiagrams.1/@connections.4"/>
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef103" toLinks="//@urnLinks.0" id="103" x="39" y="37" width="355" height="221" contDef="102" nodes="130 132 152 154 175">
+        <label/>
+      </contRefs>
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef105" toLinks="//@urnLinks.1" id="105" x="488" y="38" width="173" height="200" contDef="104" nodes="158 172 180">
+        <label/>
+      </contRefs>
+      <connections xsi:type="ucm.map:NodeConnection" source="130" target="152"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="152" target="175"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="154" target="178"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="158" target="180"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="172" target="181"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="175" target="154"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="178" target="158"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="180" target="172"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="181" target="132"/>
+    </specDiagrams>
+    <specDiagrams xsi:type="ucm.map:UCMmap" name="UCMmap183" id="183">
+      <nodes xsi:type="ucm.map:StartPoint" name="Request access review" id="190" x="66" y="123" contRef="185" succ="//@urndef/@specDiagrams.2/@connections.0">
+        <label/>
+        <precondition deltaX="40" deltaY="-17" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EndPoint" name="Keep in authorized access bank" id="192" x="61" y="281" contRef="185" pred="//@urndef/@specDiagrams.2/@connections.5">
+        <label/>
+        <postcondition deltaX="-40" deltaY="-20" label="" expression="true"/>
+      </nodes>
+      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint207" id="207" x="485" y="277" contRef="187" succ="//@urndef/@specDiagrams.2/@connections.1" pred="//@urndef/@specDiagrams.2/@connections.3"/>
+      <nodes xsi:type="ucm.map:EmptyPoint" name="EmptyPoint210" id="210" x="298" y="257" succ="//@urndef/@specDiagrams.2/@connections.2" pred="//@urndef/@specDiagrams.2/@connections.4"/>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef212" id="212" x="525" y="180" contRef="187" succ="//@urndef/@specDiagrams.2/@connections.3" pred="//@urndef/@specDiagrams.2/@connections.0" respDef="211">
+        <label/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef216" id="216" x="449" y="284" contRef="187" succ="//@urndef/@specDiagrams.2/@connections.4" pred="//@urndef/@specDiagrams.2/@connections.1" respDef="215">
+        <label/>
+      </nodes>
+      <nodes xsi:type="ucm.map:RespRef" name="RespRef224" id="224" x="273" y="256" contRef="185" succ="//@urndef/@specDiagrams.2/@connections.5" pred="//@urndef/@specDiagrams.2/@connections.2" respDef="223">
+        <label/>
+      </nodes>
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef185" toLinks="//@urnLinks.2" id="185" x="31" y="72" width="290" height="284" contDef="184" nodes="190 192 224">
+        <label/>
+      </contRefs>
+      <contRefs xsi:type="ucm.map:ComponentRef" name="ComponentRef187" toLinks="//@urnLinks.3" id="187" x="422" y="64" width="177" height="289" contDef="104" nodes="207 212 216">
+        <label/>
+      </contRefs>
+      <connections xsi:type="ucm.map:NodeConnection" source="190" target="212"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="207" target="216"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="210" target="224"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="212" target="207"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="216" target="210"/>
+      <connections xsi:type="ucm.map:NodeConnection" source="224" target="192"/>
+    </specDiagrams>
+    <components name="Researcher" id="102" contRefs="103"/>
+    <components name="DB Admin" id="104" contRefs="105 187"/>
+    <components name="REB" id="184" contRefs="185"/>
+    <components name="Component186" id="186"/>
   </urndef>
+  <urnLinks type="ResearcherLink" fromElem="32" toElem="103"/>
+  <urnLinks type="DBAdminLink" fromElem="31" toElem="105"/>
+  <urnLinks type="REBLink" fromElem="29" toElem="185"/>
+  <urnLinks type="DBAdminLink" fromElem="31" toElem="187"/>
   <metadata name="_Use0to100EvaluationRange" value="false"/>
+  <metadata name="UrnLinkType" value="ResearcherLink"/>
+  <metadata name="UrnLinkType" value="REBLink"/>
+  <metadata name="UrnLinkType" value="DBAdminLink"/>
 </urn:URNspec>
