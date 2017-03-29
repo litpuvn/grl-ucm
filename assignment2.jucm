@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="hoanglong" created="March 16, 2017 10:46:56 PM CDT" modified="March 29, 2017 12:12:34 AM CDT" specVersion="132" urnVersion="1.27" nextGlobalID="326">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="hoanglong" created="March 16, 2017 10:46:56 PM CDT" modified="March 29, 2017 12:25:02 AM CDT" specVersion="137" urnVersion="1.27" nextGlobalID="345">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup6" id="6">
       <scenarios name="make appointment successfully" id="7">
@@ -109,7 +109,17 @@
       <metadata name="_numEval" value="0"/>
       <metadata name="_qualEval" value="None"/>
     </intElements>
-    <actors name="Banana" id="12" contRefs="13 308">
+    <intElements name="be limits to the collection of personal data and any such data should be obtained" id="336" linksDest="344" type="Goal" refs="337">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+      <metadata name="ST_Legal" value="Obligation"/>
+    </intElements>
+    <intElements name="by lawful and fair means and, where appropriate, with the knowledge or consent of the data subject." id="340" linksSrc="344" type="Goal" refs="341">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+      <metadata name="ST_Legal" value="Precondition"/>
+    </intElements>
+    <actors name="Banana" id="12" contRefs="13 308 331">
       <metadata name="_numEval" value="0"/>
       <metadata name="_qualEval" value="None"/>
     </actors>
@@ -122,6 +132,10 @@
       <metadata name="_qualEval" value="None"/>
     </actors>
     <actors name="Actor307" id="307"/>
+    <actors name="Actor330" id="330">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </actors>
     <links xsi:type="grl:Contribution" name="Contribution81" id="81" refs="//@urndef/@specDiagrams.0/@connections.0" dest="32" src="70" contribution="Make" quantitativeContribution="100"/>
     <links xsi:type="grl:Contribution" name="Contribution83" id="83" refs="//@urndef/@specDiagrams.0/@connections.1" dest="62" src="60" contribution="Make" quantitativeContribution="100"/>
     <links xsi:type="grl:Contribution" name="Contribution86" id="86" refs="//@urndef/@specDiagrams.0/@connections.2" dest="56" src="64" contribution="Make" quantitativeContribution="100"/>
@@ -146,6 +160,7 @@
     <links xsi:type="grl:Contribution" name="Contribution303" id="303" refs="//@urndef/@specDiagrams.0/@connections.21" dest="28" src="293" contribution="SomePositive" quantitativeContribution="50"/>
     <links xsi:type="grl:Contribution" name="Contribution305" id="305" refs="//@urndef/@specDiagrams.0/@connections.22" dest="38" src="64" contribution="Make" quantitativeContribution="100"/>
     <links xsi:type="grl:Dependency" name="Dependency321" id="321" refs="//@urndef/@specDiagrams.4/@connections.0" dest="311" src="315"/>
+    <links xsi:type="grl:Dependency" name="Dependency344" id="344" refs="//@urndef/@specDiagrams.5/@connections.0" dest="336" src="340"/>
     <groups name="fail-privacy-compliance-to-satisfy-minimize-cost" id="4" strategies="324 325 326"/>
     <strategies name="partial-satisfaction-privacy-profit" id="324" author="hoanglong" group="4">
       <evaluations evaluation="50" qualitativeEvaluation="WeaklySatisfied" intElement="293">
@@ -499,6 +514,21 @@
         <label/>
       </contRefs>
       <connections xsi:type="grl:LinkRef" source="312" target="316" link="321"/>
+    </specDiagrams>
+    <specDiagrams xsi:type="grl:GRLGraph" name="fair1" id="327">
+      <metadata name="ST_Legal" value="Legal"/>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef337" id="337" x="355" y="87" contRef="331" succ="//@urndef/@specDiagrams.5/@connections.0" def="336">
+        <metadata name="_width" value="184"/>
+        <metadata name="_height" value="74"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef341" id="341" x="280" y="240" contRef="331" pred="//@urndef/@specDiagrams.5/@connections.0" def="340">
+        <metadata name="_width" value="271"/>
+        <metadata name="_height" value="82"/>
+      </nodes>
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef331" id="331" x="206" y="50" width="446" height="309" contDef="12" nodes="337 341">
+        <label/>
+      </contRefs>
+      <connections xsi:type="grl:LinkRef" source="337" target="341" link="344"/>
     </specDiagrams>
     <components name="User" id="144" contRefs="145" kind="Actor"/>
     <components name="Banana System" id="148" contRefs="149 286" kind="Actor"/>
