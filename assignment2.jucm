@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="hoanglong" created="March 16, 2017 10:46:56 PM CDT" modified="March 28, 2017 11:32:53 PM CDT" specVersion="104" urnVersion="1.27" nextGlobalID="323">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="hoanglong" created="March 16, 2017 10:46:56 PM CDT" modified="March 29, 2017 12:12:34 AM CDT" specVersion="132" urnVersion="1.27" nextGlobalID="326">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup6" id="6">
       <scenarios name="make appointment successfully" id="7">
@@ -17,13 +17,13 @@
   <grlspec>
     <intElements name="More Appointment" id="24" linksDest="97 100 252" linksSrc="280 283" type="Goal" refs="25">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="76"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Operate in Canada and EU" id="28" linksDest="303" linksSrc="252" type="Goal" refs="29">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="38"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Profit" id="30" linksDest="92 93" type="Goal" decompositionType="Or" refs="31">
       <metadata name="_numEval" value="100"/>
@@ -46,13 +46,13 @@
       <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Protect Data" id="46" linksDest="299" linksSrc="103" refs="47">
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="50"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Privacy compliance" id="52" linksDest="297" linksSrc="100 274" refs="53">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="38"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Well prepared food" id="56" linksDest="86" refs="57">
       <metadata name="_numEval" value="100"/>
@@ -87,17 +87,17 @@
       <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Minimize cost" id="270" linksDest="274" linksSrc="281" type="Goal" refs="271">
-      <metadata name="_numEval" value="-25"/>
+      <metadata name="_numEval" value="-9"/>
       <metadata name="_qualEval" value="WeaklyDenied"/>
     </intElements>
     <intElements name="Banana Profit" id="276" linksDest="280 281" type="Goal" decompositionType="Or" refs="277">
-      <metadata name="_numEval" value="50"/>
+      <metadata name="_numEval" value="76"/>
       <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="comply with regulations" id="293" linksSrc="297 299 303" type="Task" refs="294">
       <metadata name="_addAggregate" value="disable"/>
-      <metadata name="_numEval" value="100"/>
-      <metadata name="_qualEval" value="Satisfied"/>
+      <metadata name="_numEval" value="50"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="collect, use or disclose personal information" id="311" linksDest="321" type="Goal" refs="312">
       <metadata name="ST_Legal" value="Permission"/>
@@ -140,15 +140,18 @@
     <links xsi:type="grl:Decomposition" name="Decomposition281" id="281" refs="//@urndef/@specDiagrams.0/@connections.15" dest="276" src="270"/>
     <links xsi:type="grl:Contribution" name="Contribution283" id="283" refs="//@urndef/@specDiagrams.0/@connections.16" dest="38" src="24"/>
     <links xsi:type="grl:Dependency" name="Dependency105" id="105" refs="//@urndef/@specDiagrams.0/@connections.17" dest="68" src="66"/>
-    <links xsi:type="grl:Contribution" name="Contribution297" id="297" refs="//@urndef/@specDiagrams.0/@connections.18" dest="52" src="293" contribution="Make" quantitativeContribution="100"/>
+    <links xsi:type="grl:Contribution" name="Contribution297" id="297" refs="//@urndef/@specDiagrams.0/@connections.18" dest="52" src="293" contribution="SomePositive" quantitativeContribution="50"/>
     <links xsi:type="grl:Contribution" name="Contribution299" id="299" refs="//@urndef/@specDiagrams.0/@connections.19" dest="46" src="293" contribution="Make" quantitativeContribution="100"/>
     <links xsi:type="grl:Contribution" name="Contribution301" id="301" refs="//@urndef/@specDiagrams.0/@connections.20" dest="42" src="64" contribution="Make" quantitativeContribution="100"/>
-    <links xsi:type="grl:Contribution" name="Contribution303" id="303" refs="//@urndef/@specDiagrams.0/@connections.21" dest="28" src="293" contribution="Make" quantitativeContribution="100"/>
+    <links xsi:type="grl:Contribution" name="Contribution303" id="303" refs="//@urndef/@specDiagrams.0/@connections.21" dest="28" src="293" contribution="SomePositive" quantitativeContribution="50"/>
     <links xsi:type="grl:Contribution" name="Contribution305" id="305" refs="//@urndef/@specDiagrams.0/@connections.22" dest="38" src="64" contribution="Make" quantitativeContribution="100"/>
     <links xsi:type="grl:Dependency" name="Dependency321" id="321" refs="//@urndef/@specDiagrams.4/@connections.0" dest="311" src="315"/>
-    <groups name="StrategiesGroup4" id="4" strategies="5 323"/>
-    <strategies name="fail-privacy-compliance-to-satisfy-minimize-cost" id="5" author="hoanglong" group="4">
-      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="60">
+    <groups name="fail-privacy-compliance-to-satisfy-minimize-cost" id="4" strategies="324 325 326"/>
+    <strategies name="partial-satisfaction-privacy-profit" id="324" author="hoanglong" group="4">
+      <evaluations evaluation="50" qualitativeEvaluation="WeaklySatisfied" intElement="293">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="64">
         <kpiEvalValueSet/>
       </evaluations>
       <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="66">
@@ -160,26 +163,31 @@
       <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="70">
         <kpiEvalValueSet/>
       </evaluations>
-      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="64">
-        <kpiEvalValueSet/>
-      </evaluations>
-      <evaluations evaluation="50" qualitativeEvaluation="WeaklySatisfied" intElement="293">
-        <kpiEvalValueSet/>
-      </evaluations>
-      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="42">
-        <kpiEvalValueSet/>
-      </evaluations>
-      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="28">
-        <kpiEvalValueSet/>
-      </evaluations>
-      <evaluations evaluation="25" qualitativeEvaluation="WeaklySatisfied" intElement="52">
-        <kpiEvalValueSet/>
-      </evaluations>
-      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="270">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="60">
         <kpiEvalValueSet/>
       </evaluations>
     </strategies>
-    <strategies name="satisfy-privacy-compliance-fail-cost" id="323" author="hoanglong" group="4">
+    <strategies name="comply25" id="325" author="hoanglong" group="4">
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="60">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="64">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="66">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="68">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="70">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="25" qualitativeEvaluation="WeaklySatisfied" intElement="293">
+        <kpiEvalValueSet/>
+      </evaluations>
+    </strategies>
+    <strategies name="complyTooMuch" id="326" author="hoanglong" group="4">
       <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="293">
         <kpiEvalValueSet/>
       </evaluations>
@@ -187,18 +195,6 @@
         <kpiEvalValueSet/>
       </evaluations>
       <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="60">
-        <kpiEvalValueSet/>
-      </evaluations>
-      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="66">
-        <kpiEvalValueSet/>
-      </evaluations>
-      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="70">
-        <kpiEvalValueSet/>
-      </evaluations>
-      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="68">
-        <kpiEvalValueSet/>
-      </evaluations>
-      <evaluations evaluation="50" qualitativeEvaluation="WeaklySatisfied" intElement="276">
         <kpiEvalValueSet/>
       </evaluations>
     </strategies>
@@ -252,7 +248,7 @@
         <metadata name="_width" value="98"/>
         <metadata name="_height" value="56"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef47" id="47" x="718" y="195" succ="//@urndef/@specDiagrams.0/@connections.10" pred="//@urndef/@specDiagrams.0/@connections.19" def="46">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef47" id="47" x="784" y="181" succ="//@urndef/@specDiagrams.0/@connections.10" pred="//@urndef/@specDiagrams.0/@connections.19" def="46">
         <metadata name="_width" value="131"/>
         <metadata name="_height" value="59"/>
       </nodes>
