@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="hoanglong" created="March 16, 2017 10:46:56 PM CDT" modified="April 2, 2017 3:50:50 PM CDT" specVersion="217" urnVersion="1.27" nextGlobalID="673">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="hoanglong" created="March 16, 2017 10:46:56 PM CDT" modified="April 2, 2017 4:27:06 PM CDT" specVersion="245" urnVersion="1.27" nextGlobalID="702">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup6" id="6">
       <scenarios name="make appointment successfully" id="7">
@@ -17,107 +17,224 @@
   <grlspec>
     <intElements name="More Appointment" id="24" linksDest="97 100 252" linksSrc="280 283" type="Goal" refs="25">
       <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="90"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="Operate in Canada and EU" id="28" linksDest="303" linksSrc="252" type="Goal" refs="29">
       <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="75"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
-    <intElements name="Profit" id="30" linksDest="92 93" type="Goal" decompositionType="Or" refs="31"/>
-    <intElements name="Reach Appointment" id="32" linksDest="81 95 102 103" type="Goal" refs="33"/>
-    <intElements name="More Customer" id="36" linksDest="87" linksSrc="92" type="Goal" refs="37"/>
-    <intElements name="More new customer" id="38" linksDest="283 305" linksSrc="93" type="Goal" refs="39"/>
-    <intElements name="Spend least money" id="42" linksDest="301" linksSrc="102" type="Goal" refs="43"/>
-    <intElements name="Protect Data" id="46" linksDest="299" linksSrc="103" refs="47"/>
-    <intElements name="Privacy compliance" id="52" linksDest="297 617" linksSrc="100 274" refs="53">
-      <metadata name="_addAggregate" value="disable"/>
+    <intElements name="Profit" id="30" linksDest="92 93" type="Goal" decompositionType="Or" refs="31">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
-    <intElements name="Well prepared food" id="56" linksDest="86" refs="57"/>
-    <intElements name="Collect User Information" id="60" linksSrc="83 602 672" type="Task" refs="61 601 671">
+    <intElements name="Reach Appointment" id="32" linksDest="81 95 102 103" type="Goal" refs="33">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="More Customer" id="36" linksDest="87" linksSrc="92" type="Goal" refs="37">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="More new customer" id="38" linksDest="283 305" linksSrc="93" type="Goal" refs="39">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Spend least money" id="42" linksDest="301" linksSrc="102" type="Goal" refs="43">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Protect Data" id="46" linksDest="299" linksSrc="103" refs="47">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Privacy compliance" id="52" linksDest="297 617 674" linksSrc="100 274" refs="53">
       <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="75"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
+    </intElements>
+    <intElements name="Well prepared food" id="56" linksDest="86" refs="57">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Collect User Information" id="60" linksSrc="83 602" type="Task" refs="61 601">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Suggest Nearest Restaurants" id="62" linksDest="83" linksSrc="95 97" type="Task" refs="63">
       <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Offer Discount" id="64" linksSrc="86 87 301 305" type="Task" refs="65">
       <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="Invite Friends" id="70" linksDest="585" linksSrc="81" type="Task" refs="71">
       <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
-    <intElements name="Minimize cost" id="270" linksDest="274" linksSrc="281" type="Goal" refs="271"/>
-    <intElements name="Banana Profit" id="276" linksDest="280 281 630" type="Goal" decompositionType="Or" refs="277"/>
-    <intElements name="comply with regulations" id="293" linksSrc="297 299 303 605 609" type="Task" refs="294 604 608">
+    <intElements name="Minimize cost" id="270" linksDest="274" linksSrc="281" type="Goal" refs="271">
+      <metadata name="_numEval" value="-19"/>
+      <metadata name="_qualEval" value="WeaklyDenied"/>
+    </intElements>
+    <intElements name="Banana Profit" id="276" linksDest="280 281" type="Goal" decompositionType="Or" refs="277">
+      <metadata name="_numEval" value="90"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
+    </intElements>
+    <intElements name="comply with regulations" id="293" linksSrc="297 299 303 609 681 684 687 688" type="Task" refs="294 608 680 683 686">
       <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
-    <intElements name="collect, use or disclose personal information" id="311" linksDest="321 669" type="Goal" refs="312">
+    <intElements name="collect, use or disclose personal information" id="311" linksDest="321 701" type="Goal" refs="312">
       <metadata name="ST_Legal" value="Permission"/>
+      <metadata name="_numEval" value="25"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="only for purposes that a reasonable person would consider are appropriate in the circumstances." id="315" linksSrc="321" refs="316">
       <metadata name="ST_Legal" value="Precondition"/>
+      <metadata name="_numEval" value="25"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
-    <intElements name="be limits to the collection of personal data and any such data should be obtained" id="336" linksDest="344 602 605" type="Goal" refs="337">
+    <intElements name="be limits to the collection of personal data and any such data should be obtained" id="336" linksDest="344 602 681" type="Goal" refs="337">
       <metadata name="ST_Legal" value="Obligation"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="by lawful and fair means and, where appropriate, with the knowledge or consent of the data subject." id="340" linksSrc="344" type="Goal" refs="341">
       <metadata name="ST_Legal" value="Precondition"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements name="easily understandable and accessible information about privacy and security practices." id="396" linksDest="624" type="Goal" refs="397">
       <metadata name="ST_Legal" value="Permission"/>
+      <metadata name="_numEval" value="25"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
-    <intElements name="disclose, made available personal data (PD)" id="400" linksDest="421 422 609" decompositionType="Xor" refs="401"/>
-    <intElements name="disclose, made available" id="404"/>
+    <intElements name="disclose, made available personal data (PD)" id="400" linksDest="421 422 609" decompositionType="Xor" refs="401">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="disclose, made available" id="404">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
     <intElements name="Not disclose, made available PD" id="409" linksSrc="422" refs="410">
       <metadata name="ST_Legal" value="Obligation"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements name="disclose, made available PD" id="417" linksDest="432 433 634" linksSrc="421" decompositionType="Or" refs="418">
       <metadata name="ST_Legal" value="Exception"/>
       <metadata name="ST_Legal" value="Permission"/>
+      <metadata name="_numEval" value="-25"/>
+      <metadata name="_qualEval" value="WeaklyDenied"/>
     </intElements>
     <intElements name="with the consent of the data subject" id="424" linksSrc="432" type="Goal" refs="425">
       <metadata name="ST_Legal" value="Precondition"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
     </intElements>
     <intElements name="the authority of law" id="428" linksSrc="433" type="Goal" refs="429">
       <metadata name="ST_Legal" value="Precondition"/>
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
     </intElements>
-    <intElements name="Not be in violation" id="490" linksDest="502 503" refs="491"/>
-    <intElements name="Comply with the provisions of Section 22575" id="494" linksSrc="502" refs="495">
-      <metadata name="ST_Legal" value="Obligation"/>
+    <intElements name="Not be in violation" id="490" linksDest="502 503" refs="491">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
-    <intElements name="provisions of posted privacy policy is not in the specified list" id="498" linksSrc="503" refs="499">
+    <intElements name="Comply with the provisions of Section 22575" id="494" linksDest="687" linksSrc="502" refs="495">
       <metadata name="ST_Legal" value="Obligation"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="provisions of posted privacy policy is not in the specified list" id="498" linksDest="688" linksSrc="503" refs="499">
+      <metadata name="ST_Legal" value="Obligation"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
     </intElements>
     <intElements name="collect, use or disclose personal information (PI)" id="514" linksDest="524 653" type="Goal" refs="515">
       <metadata name="ST_Legal" value="Permission"/>
+      <metadata name="_numEval" value="-25"/>
+      <metadata name="_qualEval" value="WeaklyDenied"/>
     </intElements>
     <intElements name="for purposes that a reasonable person would consider are appropriate" id="520" linksDest="644" linksSrc="524" refs="521">
       <metadata name="ST_Legal" value="Precondition"/>
+      <metadata name="_numEval" value="-25"/>
+      <metadata name="_qualEval" value="WeaklyDenied"/>
     </intElements>
-    <intElements name="use personal information" id="533" linksDest="541 660" type="Goal" refs="534">
+    <intElements name="use personal information" id="533" linksDest="541 696" type="Goal" refs="534">
       <metadata name="ST_Legal" value="Exception"/>
       <metadata name="ST_Legal" value="Permission"/>
+      <metadata name="_numEval" value="25"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
     <intElements name="in emergency that threatens the life, health or security of an individual" id="537" linksSrc="541" refs="538">
       <metadata name="ST_Legal" value="Precondition"/>
+      <metadata name="_numEval" value="25"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
-    <intElements name="offer individuals the opportunity to choose (opt out) whether their personal information" id="550" linksDest="564 565 672" type="Goal" decompositionType="Or" refs="551">
+    <intElements name="offer individuals the opportunity to choose (opt out) whether their personal information" id="550" linksDest="564 565" type="Goal" decompositionType="Or" refs="551">
       <metadata name="ST_Legal" value="Obligation"/>
+      <metadata name="_numEval" value="25"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
-    <intElements name="be disclosed to third party" id="554" linksSrc="564" type="Goal" refs="555">
+    <intElements name="be disclosed to third party" id="554" linksDest="691" linksSrc="564" type="Goal" refs="555">
       <metadata name="ST_Legal" value="Precondition"/>
+      <metadata name="_numEval" value="25"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
-    <intElements name="be used with different purpose" id="558" linksSrc="565" type="Goal" refs="559">
+    <intElements name="be used with different purpose" id="558" linksDest="692" linksSrc="565" type="Goal" refs="559">
       <metadata name="ST_Legal" value="Precondition"/>
+      <metadata name="_numEval" value="25"/>
+      <metadata name="_qualEval" value="WeaklySatisfied"/>
     </intElements>
-    <intElements name="Softgoal567" id="567"/>
+    <intElements name="Softgoal567" id="567">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </intElements>
     <intElements name="Expect the company will collect, use, and disclose personal data in ways that are consistent with the context in which consumers provide the data." id="572" linksDest="641" refs="573">
       <metadata name="ST_Legal" value="Permission"/>
+      <metadata name="_numEval" value="-75"/>
+      <metadata name="_qualEval" value="WeaklyDenied"/>
     </intElements>
-    <intElements name="Post privacy policy online or make available" id="576" refs="577"/>
-    <intElements name="allo access of personal information" id="581" linksSrc="585 653 660 669" type="Task" refs="582 652 655 668"/>
-    <intElements name="Make privacy policy transparent" id="611" linksSrc="617 624" type="Task" refs="612 619"/>
-    <intElements name="disclose appointment and user data" id="626" linksSrc="630 634 641 644" type="Task" refs="627 632 636 643"/>
-    <actors name="Banana" id="12" contRefs="13 308 331 348 480 487 511 528 545 621 638"/>
-    <actors name="Third Party" id="16" contRefs="17"/>
-    <actors name="User" id="18" contRefs="19 393 437 647 657 663"/>
+    <intElements name="Post privacy policy online or make available" id="576" linksDest="684" refs="577">
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="allo access of personal information" id="581" linksSrc="585 653 696 701" type="Task" refs="582 652 655 668">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="Make privacy policy transparent" id="611" linksSrc="617 624" type="Task" refs="612 619">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <intElements name="disclose appointment and user data" id="626" linksSrc="634 641 644 674 691 692" type="Task" refs="627 632 636 643 690">
+      <metadata name="_addAggregate" value="disable"/>
+      <metadata name="_numEval" value="100"/>
+      <metadata name="_qualEval" value="Satisfied"/>
+    </intElements>
+    <actors name="Banana" id="12" contRefs="13 331 348 480 487 511 528 545 621 638 308">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </actors>
+    <actors name="Third Party" id="16" contRefs="17">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </actors>
+    <actors name="User" id="18" contRefs="19 393 437 647 657 663">
+      <metadata name="_numEval" value="0"/>
+      <metadata name="_qualEval" value="None"/>
+    </actors>
     <actors name="Actor307" id="307"/>
     <actors name="Actor330" id="330"/>
     <actors name="Actor347" id="347"/>
@@ -169,21 +286,24 @@
     <links xsi:type="grl:Decomposition" name="Decomposition564" id="564" refs="//@urndef/@specDiagrams.13/@connections.0" dest="550" src="554"/>
     <links xsi:type="grl:Decomposition" name="Decomposition565" id="565" refs="//@urndef/@specDiagrams.13/@connections.1" dest="550" src="558"/>
     <links xsi:type="grl:Dependency" name="Dependency585" id="585" refs="//@urndef/@specDiagrams.0/@connections.21" dest="70" src="581"/>
-    <links xsi:type="grl:Contribution" name="Contribution602" id="602" refs="//@urndef/@specDiagrams.4/@connections.1" dest="336" src="60" contribution="Hurt" quantitativeContribution="-25"/>
-    <links xsi:type="grl:Contribution" name="Contribution605" id="605" refs="//@urndef/@specDiagrams.4/@connections.2" dest="336" src="293"/>
     <links xsi:type="grl:Contribution" name="Contribution609" id="609" refs="//@urndef/@specDiagrams.5/@connections.4" dest="400" src="293" contribution="Make" quantitativeContribution="100"/>
     <links xsi:type="grl:Contribution" name="Contribution617" id="617" refs="//@urndef/@specDiagrams.0/@connections.22" dest="52" src="611"/>
     <links xsi:type="grl:Contribution" name="Contribution624" id="624" refs="//@urndef/@specDiagrams.6/@connections.0" dest="396" src="611"/>
-    <links xsi:type="grl:Contribution" name="Contribution630" id="630" refs="//@urndef/@specDiagrams.0/@connections.23" dest="276" src="626"/>
     <links xsi:type="grl:Contribution" name="Contribution634" id="634" refs="//@urndef/@specDiagrams.5/@connections.5" dest="417" src="626" contribution="Hurt" quantitativeContribution="-25"/>
     <links xsi:type="grl:Contribution" name="Contribution641" id="641" refs="//@urndef/@specDiagrams.7/@connections.0" dest="572" src="626" contribution="SomeNegative" quantitativeContribution="-75"/>
     <links xsi:type="grl:Contribution" name="Contribution644" id="644" refs="//@urndef/@specDiagrams.10/@connections.1" dest="520" src="626" contribution="Hurt" quantitativeContribution="-25"/>
     <links xsi:type="grl:Contribution" name="Contribution653" id="653" refs="//@urndef/@specDiagrams.10/@connections.2" dest="514" src="581"/>
-    <links xsi:type="grl:Contribution" name="Contribution660" id="660" refs="//@urndef/@specDiagrams.11/@connections.1" dest="533" src="581"/>
-    <links xsi:type="grl:Contribution" name="Contribution669" id="669" refs="//@urndef/@specDiagrams.12/@connections.1" dest="311" src="581"/>
-    <links xsi:type="grl:Contribution" name="Contribution672" id="672" refs="//@urndef/@specDiagrams.13/@connections.2" dest="550" src="60" contribution="Hurt" quantitativeContribution="-25"/>
-    <groups name="grl-strategies" id="4" strategies="324 325 326"/>
-    <groups name="legal-grl-strategies" id="580"/>
+    <links xsi:type="grl:Contribution" name="Contribution674" id="674" refs="//@urndef/@specDiagrams.0/@connections.23" dest="52" src="626" contribution="Hurt" quantitativeContribution="-25"/>
+    <links xsi:type="grl:Contribution" name="Contribution602" id="602" refs="//@urndef/@specDiagrams.4/@connections.1" dest="336" src="60" contribution="Hurt" quantitativeContribution="-25"/>
+    <links xsi:type="grl:Contribution" name="Contribution681" id="681" refs="//@urndef/@specDiagrams.4/@connections.2" dest="336" src="293" contribution="Make" quantitativeContribution="100"/>
+    <links xsi:type="grl:Contribution" name="Contribution684" id="684" refs="//@urndef/@specDiagrams.8/@connections.0" dest="576" src="293" contribution="Make" quantitativeContribution="100"/>
+    <links xsi:type="grl:Contribution" name="Contribution687" id="687" refs="//@urndef/@specDiagrams.9/@connections.2" dest="494" src="293" contribution="Make" quantitativeContribution="100"/>
+    <links xsi:type="grl:Contribution" name="Contribution688" id="688" refs="//@urndef/@specDiagrams.9/@connections.3" dest="498" src="293" contribution="Make" quantitativeContribution="100"/>
+    <links xsi:type="grl:Contribution" name="Contribution691" id="691" refs="//@urndef/@specDiagrams.13/@connections.2" dest="554" src="626"/>
+    <links xsi:type="grl:Contribution" name="Contribution692" id="692" refs="//@urndef/@specDiagrams.13/@connections.3" dest="558" src="626"/>
+    <links xsi:type="grl:Contribution" name="Contribution696" id="696" refs="//@urndef/@specDiagrams.11/@connections.1" dest="533" src="581"/>
+    <links xsi:type="grl:Contribution" name="Contribution701" id="701" refs="//@urndef/@specDiagrams.12/@connections.1" dest="311" src="581"/>
+    <groups name="grl-strategies" id="4" strategies="324 326"/>
     <strategies name="partial-satisfaction-privacy-profit" id="324" author="hoanglong" group="4">
       <evaluations evaluation="50" qualitativeEvaluation="WeaklySatisfied" intElement="293">
         <kpiEvalValueSet/>
@@ -200,21 +320,10 @@
       <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="581">
         <kpiEvalValueSet/>
       </evaluations>
-    </strategies>
-    <strategies name="comply25" id="325" author="hoanglong" group="4">
-      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="60">
+      <evaluations evaluation="25" qualitativeEvaluation="WeaklySatisfied" intElement="611">
         <kpiEvalValueSet/>
       </evaluations>
-      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="64">
-        <kpiEvalValueSet/>
-      </evaluations>
-      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="70">
-        <kpiEvalValueSet/>
-      </evaluations>
-      <evaluations evaluation="25" qualitativeEvaluation="WeaklySatisfied" intElement="293">
-        <kpiEvalValueSet/>
-      </evaluations>
-      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="581">
+      <evaluations evaluation="75" qualitativeEvaluation="WeaklySatisfied" intElement="626">
         <kpiEvalValueSet/>
       </evaluations>
     </strategies>
@@ -232,6 +341,15 @@
         <kpiEvalValueSet/>
       </evaluations>
       <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="70">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="611">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="626">
+        <kpiEvalValueSet/>
+      </evaluations>
+      <evaluations evaluation="100" qualitativeEvaluation="Satisfied" intElement="336">
         <kpiEvalValueSet/>
       </evaluations>
     </strategies>
@@ -289,7 +407,7 @@
         <metadata name="_width" value="131"/>
         <metadata name="_height" value="59"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef53" id="53" x="628" y="-209" contRef="13" succ="//@urndef/@specDiagrams.0/@connections.8 //@urndef/@specDiagrams.0/@connections.12" pred="//@urndef/@specDiagrams.0/@connections.16 //@urndef/@specDiagrams.0/@connections.22" def="52">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef53" id="53" x="628" y="-209" contRef="13" succ="//@urndef/@specDiagrams.0/@connections.8 //@urndef/@specDiagrams.0/@connections.12" pred="//@urndef/@specDiagrams.0/@connections.16 //@urndef/@specDiagrams.0/@connections.22 //@urndef/@specDiagrams.0/@connections.23" def="52">
         <metadata name="_height" value="50"/>
         <metadata name="_width" value="140"/>
       </nodes>
@@ -317,7 +435,7 @@
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="110"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef277" id="277" x="364" y="-244" contRef="13" pred="//@urndef/@specDiagrams.0/@connections.13 //@urndef/@specDiagrams.0/@connections.14 //@urndef/@specDiagrams.0/@connections.23" def="276">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef277" id="277" x="364" y="-244" contRef="13" pred="//@urndef/@specDiagrams.0/@connections.13 //@urndef/@specDiagrams.0/@connections.14" def="276">
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="110"/>
       </nodes>
@@ -329,15 +447,15 @@
         <metadata name="_width" value="135"/>
         <metadata name="_height" value="62"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef612" id="612" x="803" y="-199" succ="//@urndef/@specDiagrams.0/@connections.22" def="611">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef612" id="612" x="839" y="-175" succ="//@urndef/@specDiagrams.0/@connections.22" def="611">
         <metadata name="_width" value="129"/>
         <metadata name="_height" value="64"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef627" id="627" x="336" y="-130" contRef="13" succ="//@urndef/@specDiagrams.0/@connections.23" def="626">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef627" id="627" x="804" y="-314" succ="//@urndef/@specDiagrams.0/@connections.23" def="626">
         <metadata name="_width" value="103"/>
         <metadata name="_height" value="62"/>
       </nodes>
-      <contRefs xsi:type="grl:ActorRef" name="ActorRef13" id="13" x="336" y="-319" width="422" height="455" contDef="12" nodes="53 63 61 29 25 271 277 294 627">
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef13" id="13" x="336" y="-319" width="422" height="455" contDef="12" nodes="53 63 61 29 25 271 277 294">
         <label/>
       </contRefs>
       <contRefs xsi:type="grl:ActorRef" name="ActorRef17" id="17" x="-81" y="-47" width="281" height="268" contDef="16" nodes="57 65 31 37 39">
@@ -397,7 +515,7 @@
       <connections xsi:type="grl:LinkRef" source="612" target="53" link="617">
         <label deltaX="30" deltaY="-30"/>
       </connections>
-      <connections xsi:type="grl:LinkRef" source="627" target="277" link="630">
+      <connections xsi:type="grl:LinkRef" source="627" target="53" link="674">
         <label deltaX="30" deltaY="-30"/>
       </connections>
     </specDiagrams>
@@ -545,7 +663,7 @@
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="110"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef604" id="604" x="443" y="57" succ="//@urndef/@specDiagrams.4/@connections.2" def="293">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef680" id="680" x="404" y="108" succ="//@urndef/@specDiagrams.4/@connections.2" def="293">
         <metadata name="_height" value="45"/>
         <metadata name="_width" value="110"/>
       </nodes>
@@ -556,7 +674,7 @@
       <connections xsi:type="grl:LinkRef" source="601" target="337" link="602">
         <label deltaX="30" deltaY="-30"/>
       </connections>
-      <connections xsi:type="grl:LinkRef" source="604" target="337" link="605">
+      <connections xsi:type="grl:LinkRef" source="680" target="337" link="681">
         <label deltaX="30" deltaY="-30"/>
       </connections>
     </specDiagrams>
@@ -646,32 +764,49 @@
     </specDiagrams>
     <specDiagrams xsi:type="grl:GRLGraph" name="cali-1" id="464">
       <metadata name="ST_Legal" value="Legal"/>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef577" id="577" x="499" y="150" contRef="480" def="576">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef577" id="577" x="499" y="150" contRef="480" pred="//@urndef/@specDiagrams.8/@connections.0" def="576">
         <metadata name="_width" value="189"/>
         <metadata name="_height" value="67"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef683" id="683" x="130" y="243" succ="//@urndef/@specDiagrams.8/@connections.0" def="293">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
       </nodes>
       <contRefs xsi:type="grl:ActorRef" name="ActorRef480" id="480" x="362" y="72" width="438" height="404" contDef="12" nodes="577">
         <label/>
       </contRefs>
+      <connections xsi:type="grl:LinkRef" source="683" target="577" link="684">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
     </specDiagrams>
     <specDiagrams xsi:type="grl:GRLGraph" name="cali-2" id="485">
       <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef491" id="491" x="577" y="80" contRef="487" pred="//@urndef/@specDiagrams.9/@connections.0 //@urndef/@specDiagrams.9/@connections.1" def="490">
         <metadata name="_width" value="168"/>
         <metadata name="_height" value="77"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef495" id="495" x="401" y="232" contRef="487" succ="//@urndef/@specDiagrams.9/@connections.0" def="494">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef495" id="495" x="401" y="232" contRef="487" succ="//@urndef/@specDiagrams.9/@connections.0" pred="//@urndef/@specDiagrams.9/@connections.2" def="494">
         <metadata name="_width" value="187"/>
         <metadata name="_height" value="87"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef499" id="499" x="737" y="270" contRef="487" succ="//@urndef/@specDiagrams.9/@connections.1" def="498">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef499" id="499" x="737" y="270" contRef="487" succ="//@urndef/@specDiagrams.9/@connections.1" pred="//@urndef/@specDiagrams.9/@connections.3" def="498">
         <metadata name="_width" value="179"/>
         <metadata name="_height" value="82"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef686" id="686" x="90" y="382" succ="//@urndef/@specDiagrams.9/@connections.2 //@urndef/@specDiagrams.9/@connections.3" def="293">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
       </nodes>
       <contRefs xsi:type="grl:ActorRef" name="ActorRef487" id="487" x="311" y="33" width="699" height="491" contDef="12" nodes="491 495 499">
         <label/>
       </contRefs>
       <connections xsi:type="grl:LinkRef" source="495" target="491" link="502"/>
       <connections xsi:type="grl:LinkRef" source="499" target="491" link="503"/>
+      <connections xsi:type="grl:LinkRef" source="686" target="495" link="687">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="686" target="499" link="688">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
     </specDiagrams>
     <specDiagrams xsi:type="grl:GRLGraph" name="pipeda-1" id="509">
       <metadata name="ST_Legal" value="Legal"/>
@@ -725,7 +860,7 @@
         <label/>
       </contRefs>
       <connections xsi:type="grl:LinkRef" source="534" target="538" link="541"/>
-      <connections xsi:type="grl:LinkRef" source="655" target="534" link="660">
+      <connections xsi:type="grl:LinkRef" source="655" target="534" link="696">
         <label deltaX="30" deltaY="-30"/>
       </connections>
     </specDiagrams>
@@ -743,41 +878,44 @@
         <metadata name="_width" value="135"/>
         <metadata name="_height" value="62"/>
       </nodes>
-      <contRefs xsi:type="grl:ActorRef" name="ActorRef308" id="308" x="173" y="13" width="522" height="330" contDef="12" nodes="312 316">
-        <label/>
-      </contRefs>
       <contRefs xsi:type="grl:ActorRef" name="ActorRef663" id="663" x="868" y="50" width="380" height="355" contDef="18" nodes="668">
         <label/>
       </contRefs>
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef308" id="308" x="173" y="13" width="522" height="330" contDef="12" nodes="312 316">
+        <label/>
+      </contRefs>
       <connections xsi:type="grl:LinkRef" source="312" target="316" link="321"/>
-      <connections xsi:type="grl:LinkRef" source="668" target="312" link="669">
+      <connections xsi:type="grl:LinkRef" source="668" target="312" link="701">
         <label deltaX="30" deltaY="-30"/>
       </connections>
     </specDiagrams>
     <specDiagrams xsi:type="grl:GRLGraph" name="eu-2" id="543">
       <metadata name="ST_Legal" value="Legal"/>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef551" id="551" x="607" y="133" contRef="545" pred="//@urndef/@specDiagrams.13/@connections.0 //@urndef/@specDiagrams.13/@connections.1 //@urndef/@specDiagrams.13/@connections.2" def="550">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef551" id="551" x="607" y="133" contRef="545" pred="//@urndef/@specDiagrams.13/@connections.0 //@urndef/@specDiagrams.13/@connections.1" def="550">
         <metadata name="_width" value="222"/>
         <metadata name="_height" value="83"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef555" id="555" x="484" y="298" contRef="545" succ="//@urndef/@specDiagrams.13/@connections.0" def="554">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef555" id="555" x="484" y="298" contRef="545" succ="//@urndef/@specDiagrams.13/@connections.0" pred="//@urndef/@specDiagrams.13/@connections.2" def="554">
         <metadata name="_width" value="154"/>
         <metadata name="_height" value="78"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef559" id="559" x="760" y="292" contRef="545" succ="//@urndef/@specDiagrams.13/@connections.1" def="558">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef559" id="559" x="760" y="292" contRef="545" succ="//@urndef/@specDiagrams.13/@connections.1" pred="//@urndef/@specDiagrams.13/@connections.3" def="558">
         <metadata name="_width" value="184"/>
         <metadata name="_height" value="87"/>
       </nodes>
-      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef671" id="671" x="201" y="190" succ="//@urndef/@specDiagrams.13/@connections.2" def="60">
-        <metadata name="_height" value="45"/>
-        <metadata name="_width" value="110"/>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef690" id="690" x="258" y="434" succ="//@urndef/@specDiagrams.13/@connections.2 //@urndef/@specDiagrams.13/@connections.3" def="626">
+        <metadata name="_width" value="103"/>
+        <metadata name="_height" value="62"/>
       </nodes>
       <contRefs xsi:type="grl:ActorRef" name="ActorRef545" id="545" x="429" y="88" width="581" height="448" contDef="12" nodes="551 555 559">
         <label deltaY="8"/>
       </contRefs>
       <connections xsi:type="grl:LinkRef" source="555" target="551" link="564"/>
       <connections xsi:type="grl:LinkRef" source="559" target="551" link="565"/>
-      <connections xsi:type="grl:LinkRef" source="671" target="551" link="672">
+      <connections xsi:type="grl:LinkRef" source="690" target="555" link="691">
+        <label deltaX="30" deltaY="-30"/>
+      </connections>
+      <connections xsi:type="grl:LinkRef" source="690" target="559" link="692">
         <label deltaX="30" deltaY="-30"/>
       </connections>
     </specDiagrams>
